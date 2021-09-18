@@ -1,0 +1,24 @@
+{
+  "name": "vite-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "watch": "tweego -w -o index.html src/twee --head=src/head.html -m dist/assets"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "autoprefixer": "^10.3.4",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-combine-media-query": "^1.0.1",
+    "sass": "^1.41.1",
+    "vite": "^2.5.4",
+    "vite-plugin-compression": "^0.3.5"
+  },
+  "dependencies": {}
+}
