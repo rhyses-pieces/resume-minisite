@@ -4,3 +4,9 @@
     "format": "SugarCube",
     "format-version": "2.35.0"
 }
+
+:: StoryTitle
+testing
+
+:: Start
+start here!

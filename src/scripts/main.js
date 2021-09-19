@@ -1,7 +1,6 @@
 import '../styles/style.css'
 import '../styles/test.scss'
+// yes you can mix and match! just don't mix less in sass or stylus in css bcuz they're all different processors
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+console.log('this is a vite setup!')
+console.log('testing one two three')
