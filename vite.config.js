@@ -7,22 +7,21 @@ export default defineConfig({
         watch: {
             usePolling: true,
             depth: 5,
+            verbose: false,
         }
     },
     build: {
         cssCodeSplit: false,
-        emptyOutDir: false,
-        minify: 'esbuild',
+        emptyOutDir: true,
+        minify: false,
         rollupOptions: {
-            input: [ './src/scripts/main.js', './index.html' ],
+            input: ['./src/scripts/main.js', './index.html'],
             output: {
                 assetFileNames: 'assets/[name].[ext]',
                 chunkFileNames: 'assets/[name].js',
                 entryFileNames: 'assets/[name].js',
             },
-            plugins: [
-                livereload({ watch: 'dist', port: 12345, })
-            ]
+            plugins: [livereload('dist/**/*')]
         },
     }
 })

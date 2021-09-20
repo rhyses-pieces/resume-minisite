@@ -5,8 +5,8 @@
     "dev": "vite --open",
     "build": "vite build",
     "serve": "vite preview",
-    "watch:assets": "vite build --watch.buildDelay 5000",
-    "watch:twee": "tweego -w -o index.html src/twee --head=src/head.html -m dist/assets",
+    "watch:assets": "vite build --watch.buildDelay 2000",
+    "watch:twee": "tweego -w -o index.html src/twee --head=src/head.html",
     "start": "npm-run-all -p watch:* serve"
   },
   "devDependencies": {
