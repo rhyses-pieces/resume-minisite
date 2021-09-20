@@ -12,16 +12,16 @@ export default defineConfig({
     },
     build: {
         cssCodeSplit: false,
-        emptyOutDir: true,
+        emptyOutDir: false,
         minify: false,
         rollupOptions: {
-            input: ['./src/scripts/main.js', './index.html'],
+            input: [ './src/scripts/main.js', './index.html' ],
             output: {
                 assetFileNames: 'assets/[name].[ext]',
                 chunkFileNames: 'assets/[name].js',
                 entryFileNames: 'assets/[name].js',
             },
-            plugins: [livereload('dist/**/*')]
+            plugins: [livereload('dist/index.html')]
         },
     }
 })
