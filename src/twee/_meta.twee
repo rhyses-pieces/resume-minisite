@@ -15,17 +15,3 @@ A flurry of friendly, holographic screens whirl around you until just two screen
 Would you like to...
 
 [[Begin|intro]]
-
-[[See Credits|Credits]]
-
-:: Credits
-Fonts Used:
-* Space Grotesk by
-* NeoDGM by 
-
-Technologies used:
-* Tweego to compile 
-* Twee and VSCode to build
-* Jquery, CSS3, ES6 Javascript?
-
-[[Return|Title Screen]]
