@@ -1,0 +1,11 @@
+:root {
+   --sans: 'space grotesk', sans-serif;
+   --mono: 'cozette', monospace;
+   --display: 'neodgm', sans-serif;
+   --bg: thistle;
+   --text: #2c3e50;
+   --text-alt: #c2e0e0;
+   --accent: #2c3e50;
+   --border: #0a1c30;
+   --accent-shade: #52657785;
+}

@@ -1,12 +1,31 @@
 :: StoryData
 {
-    "ifid": "EC1711F9-FC2A-49E1-93B2-AE8548DF15F3",
-    "format": "SugarCube",
-    "format-version": "2.35.0"
+    "ifid": "80015CBC-2F24-48AF-A637-BE567CF60082",
+    "format": "sugarcube",
+    "format-version": "2.30.0",
+    "start": "Title Screen"
 }
 
 :: StoryTitle
-testing
+Rhys
 
-:: Start
-start here!
+:: Title Screen
+A flurry of friendly, holographic screens whirl around you until just two screens hover in front of you.
+
+Would you like to...
+
+[[Begin|intro]]
+
+[[See Credits|Credits]]
+
+:: Credits
+Fonts Used:
+* Space Grotesk by
+* NeoDGM by 
+
+Technologies used:
+* Tweego to compile 
+* Twee and VSCode to build
+* Jquery, CSS3, ES6 Javascript?
+
+[[Return|Title Screen]]

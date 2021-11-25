@@ -1,8 +1,55 @@
-#passages {
-  font-family: Inter, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: right;
-  color: #2c3e50;
-  margin-top: 100px;
+@import url(fonts.css);
+@import url(colors.css);
+
+body {
+  font-family: var(--sans);
+  background-color: var(--bg);
+  font-size: 16px;
+  font-size: 1rem;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+code, pre, kbd {
+  font-family: var(--mono);
+  background-color: var(--accent);
+  color: var(--bg);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+tw-story {
+  display: block;
+  margin: 2em auto;
+  max-width: 40em;
+}
+
+tw-passage {
+  display: block;
+  position: relative;
+  border: 3px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 var(--accent-shade);
+  font-size: 1.25em;
+  line-height: 1.75;
+  padding: 1em 2em;
+  margin: 100px 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+tw-passage a.link-internal {
+  display: block;
+  max-width: 92.5%;
+  margin: 1em auto;
+  padding: 2px 5px;
+  background-color: var(--accent);
+  font-family: var(--display);
+  font-size: 1.2em;
+  color: var(--text-alt);
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 var(--accent-shade);
 }

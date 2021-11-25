@@ -1,7 +1,10 @@
+import commonjs from "@rollup/plugin-commonjs";
 import livereload from 'rollup-plugin-livereload'
+import resolve from '@rollup/plugin-node-resolve'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+    plugins: [  ],
     server: {
         open: true,
         watch: {
@@ -11,6 +14,9 @@ export default defineConfig({
         }
     },
     build: {
+        // commonjsOptions: {
+        //     exclude: ['node_modules/marked/**/**']
+        // },
         cssCodeSplit: false,
         emptyOutDir: false,
         minify: false,
@@ -21,7 +27,11 @@ export default defineConfig({
                 chunkFileNames: 'assets/[name].js',
                 entryFileNames: 'assets/[name].js',
             },
-            plugins: [livereload('dist/index.html')]
+            plugins: [
+                commonjs(),
+                livereload('dist/index.html'),
+                resolve()
+            ]
         },
     }
 })

@@ -1,0 +1,21 @@
+:: StoryInterface
+<tw-story>
+    <nav id="menu" data-passage="Menu"></nav>
+    <tw-passage id="passages"></tw-passages>
+</tw-story>
+
+:: Menu
+[[Info|intro]]
+[[Skills|skills]]
+[[History|education]]
+
+:: StoryInit [script]
+Config.cleanupWikifierOutput = true;
+Config.passages.onProcess = function (p) {
+    marked.setOptions({
+        headerIds: false,
+        smartLists: true,
+        smartypants: true
+    });
+    return marked.parseInline(p.text);
+}
