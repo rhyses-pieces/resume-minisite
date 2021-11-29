@@ -14,9 +14,6 @@ export default defineConfig({
         }
     },
     build: {
-        // commonjsOptions: {
-        //     exclude: ['node_modules/marked/**/**']
-        // },
         cssCodeSplit: false,
         emptyOutDir: false,
         minify: false,

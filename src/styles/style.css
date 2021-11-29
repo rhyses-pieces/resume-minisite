@@ -2,12 +2,18 @@
 @import url(colors.css);
 
 body {
-  font-family: var(--sans);
+  font-family: var(--mono);
   background-color: var(--bg);
   font-size: 16px;
   font-size: 1rem;
   color: var(--text);
   box-sizing: border-box;
+}
+
+/* TODO: use an eye catching color */
+strong, b {
+  font-weight: normal;
+  color: var(--accent);
 }
 
 code, pre, kbd {
@@ -21,31 +27,30 @@ code, pre, kbd {
 tw-story {
   display: block;
   margin: 2em auto;
-  max-width: 40em;
+  max-width: 70em;
 }
 
-tw-passage {
+.passage {
   display: block;
   position: relative;
   border: 3px solid var(--accent);
   border-radius: 10px;
   box-shadow: 5px 5px 0 var(--accent-shade);
-  font-size: 1.25em;
-  line-height: 1.75;
+  font-size: 2em;
+  line-height: 1.25;
   padding: 1em 2em;
   margin: 100px 0;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
 
-tw-passage a.link-internal {
+.passage a.link-internal {
   display: block;
   max-width: 92.5%;
   margin: 1em auto;
-  padding: 2px 5px;
+  padding: 0.5em 1em;
   background-color: var(--accent);
-  font-family: var(--display);
-  font-size: 1.2em;
+  font-family: var(--sans);
   color: var(--text-alt);
   text-align: center;
   text-decoration: none;
@@ -54,4 +59,6 @@ tw-passage a.link-internal {
   box-shadow: 5px 5px 0 var(--accent-shade);
 }
 
-tw-passage a.link-internal
+.passage a.link-internal:active {
+  box-shadow: inset 5px 5px 0 var(--accent-shade-dark);
+}

@@ -5,11 +5,32 @@ I graduated from **Virginia Commonwealth University** with a **Bachelor of Fine 
 
 I'm on a personal mission to create a more accessible, stylish Internet through web design and software development. 🎨
 
-[[What do you bring to the table?|skills]]
+[[What do you know?|skills]] [[How long have you been at this?|experience]] [[Can you show what work you've done?|projects]]
 
-:: skills
-My choice of weapons are `CSS3`, `Javascript`, `Angular`, `React`, and a sprinkle of `Node.js`.
+:: skills [portfolio]
+I have a lot of experience with these tools in particular:
 
-I also have experience with `Java`, `Sass`, `PostCSS`, and `Agile/SCRUM`-based methodologies.
+* HTML5
+* CSS3, Sass, and PostCSS / CSS Modules
+* Javascript, Typescript
+* Bootstrap
+* Angular, React, Next.js
+* Netlify, Vercel
+* Node.js, Express
+* Object-Oriented Programming
+
+I'm savvy with these kinds of tools:
+* Wordpress CMS
+* Netlify CMS
+* Adobe Photoshop
+* Adobe Illustrator
+* Figma
+
+My working style is like this:
+* concerned about transparency and communication
+* teamwork-oriented
+* creative problem solving
+* advocates for inclusivity and accessibility
+* ... and likes making friends :)
 
 [[Return?|intro]]

@@ -13,6 +13,7 @@
 Config.cleanupWikifierOutput = true;
 Config.passages.onProcess = function (p) {
     marked.setOptions({
+        breaks: false,
         headerIds: false,
         smartLists: true,
         smartypants: true

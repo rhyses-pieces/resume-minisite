@@ -1,1 +1,5 @@
 :: UserScripts [script]
+$(document).ready(function() {
+  // get rid of conflicting styles from sugarcube
+  // $("style#style-core-passage").remove();
+})
